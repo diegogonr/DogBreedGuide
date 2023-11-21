@@ -1,0 +1,46 @@
+
+.navigate-container{
+  display: flex;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-right: 8rem;
+}
+
+.navigate-button {
+  color: #fff;
+  border: none;
+  padding: 10px 50px 0px 50px;
+  cursor: pointer;
+  background-color: white;
+}
+
+
+.navigate-link {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Impact';
+  font-size: 15px;
+}
+  
+.button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.active::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #FFD868; /* Color del punto circular */
+  border-radius: 50%;
+  display: block;
+  margin-top: 5px;
+}

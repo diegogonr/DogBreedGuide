@@ -1,0 +1,31 @@
+.container-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .container-navbar form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .container-navbar input {
+    padding: 8px 220px 8px 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+  
+  .icon-button {
+    background-color: white;
+    border: none;
+  }
+  .icon {
+    color: black;
+    cursor: pointer;
+
+  }
