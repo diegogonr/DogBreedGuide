@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://dog-web.onrender.com/'
+axios.defaults.baseURL = 'https://dog-web.onrender.com'
 
 ReactDOM.render(
   <React.StrictMode>
