@@ -15,7 +15,7 @@ function App() {
   const onSearch = async (name) => {
     try {
       if(name){
-        const response = await axios.get(`http://localhost:3001/dogs/?name=${name}`);
+        const response = await axios.get(`/dogs/?name=${name}`);
         console.log(response);
         dispatch(updateAllDogs(response.data));
       }

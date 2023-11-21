@@ -83,7 +83,7 @@ const validate = () =>{
 }
 
 const createDogs = async (newDog) => {
-    const endpoint = 'http://localhost:3001/dogs';
+    const endpoint = '/dogs';
     console.log(newDog)
 
     try {

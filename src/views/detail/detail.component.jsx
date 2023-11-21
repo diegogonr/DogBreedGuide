@@ -11,7 +11,7 @@ function Detail() {
     event.target.alt = 'Imagen no disponible';
   };
   useEffect(()=>{
-    axios(`http://localhost:3001/dogs/${idRaza}`).then(({ data }) => {   
+    axios(`/dogs/${idRaza}`).then(({ data }) => {   
     if (data.length>0) {
       setDog(data[0]);                                   
       } else {

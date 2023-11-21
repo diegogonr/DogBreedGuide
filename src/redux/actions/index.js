@@ -12,7 +12,7 @@ export const FILTER_TEMPERAMENTS ="FILTER_TEMPERAMENTS";
 export const getDogs = () => {
     return async (dispatch) => {
         try {
-            const response = await axios('http://localhost:3001/dogs');
+            const response = await axios('/dogs');
             console.log(response)
             return dispatch({
                 type: GET_DOGS,
@@ -28,7 +28,7 @@ export const getDogs = () => {
  export const getTemperaments = () => {
     return async (dispatch) => {
         try {
-            const response = await axios('http://localhost:3001/temperaments');
+            const response = await axios('/temperaments');
             console.log(response)
 
             return dispatch({
