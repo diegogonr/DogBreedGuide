@@ -35,7 +35,7 @@ body {
   width: 200px;
   padding: 8px;
   font-size: 14px;
-  border: 3px solid #B80D57;
+  border: 1px solid var(--color-morado-primario);
   border-radius: 6px;
   margin-right: 10px;
   background-color: #ffffff;
@@ -44,8 +44,7 @@ body {
 }
 
 .container-cards{
-  background-color: #B80D57;
-  height: calc(100vh -50px);
+  background-color: var(--color-morado-primario);
   width: 80%;
   padding: 50px 80px;
 }

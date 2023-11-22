@@ -39,7 +39,7 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: #FFD868; /* Color del punto circular */
+  background-color: var(--color-amarillo-primario); /* Color del punto circular */
   border-radius: 50%;
   display: block;
   margin-top: 5px;

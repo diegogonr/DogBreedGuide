@@ -14,14 +14,8 @@ function Card({dog}) {
     <div className='container'>
 
       <div  className='card-container'>
-          <div className='text'>
-            <h2>{name} </h2>
-            {Array.isArray(temperaments)? 
-              <p>Temperamentos: {temperaments.map(temp => temp.name).join(', ')}</p>
-                          :
-              <p>  Temperamentos: {temperaments}</p>
-            }
-            <p>  Peso:{weight}</p>
+          <div className='title'>
+             <h2>{name} </h2>
           </div>
 
           <div className='card-img'>
@@ -33,6 +27,15 @@ function Card({dog}) {
               />
             )}
           </div>
+
+          <div className='text'>
+            {Array.isArray(temperaments)? 
+              <p>Los Temperamentos son: {temperaments.map(temp => temp.name).join(', ')} y el Peso tiene un rango de {weight}</p>
+                          :
+              <p>  Los Temperamentos son: {temperaments} y el Ppeso tiene un rango de {weight}</p>
+            }
+          </div>
+
          <Link to={`/detail/${id}`}>
             <button className='landing-button'>Más Info</button>
           </Link>

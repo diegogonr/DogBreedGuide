@@ -12,33 +12,49 @@
 .card-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .text {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  height: 14rem;
+  margin: 0 1rem;
 }
 
-.text h2,p {
+.text p {
   color: rgb(0, 0, 0);
 }
 
-.text h2 {
-  font-size: 50px;
-  font-family: 'Brush Script MT';
+.title{
+  margin-bottom: 2rem;
+
+}
+.title h2{
+  font-size: 40px;
+  font-family: 'Ghibo Talk';
   height: 100px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0px;
+  color: black;
 }
 
+.card-img{
+  background-color: var(--color-amarillo-primario);
+  padding: 1rem;
+  width: 80%;
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 20px;
 
+}
 .card-img img {
   width: 250px; 
   height: 150px;
   border-radius: 20px;
-  margin-bottom: 20px;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }

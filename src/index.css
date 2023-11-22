@@ -13,3 +13,8 @@ code {
     monospace;
 }
 
+:root {
+  --color-morado-primario: #6116fb; 
+  --color-morado-secundario: #721B65; 
+  --color-amarillo-primario: #FED40C; 
+}

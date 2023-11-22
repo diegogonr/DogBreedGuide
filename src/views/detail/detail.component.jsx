@@ -13,6 +13,7 @@ function Detail() {
   useEffect(()=>{
     axios(`/dogs/${idRaza}`).then(({ data }) => {   
     if (data.length>0) {
+      console.log(data)
       setDog(data[0]);                                   
       } else {
           alert('No existe Dog con ese nombre');
@@ -34,7 +35,7 @@ function Detail() {
                       <p>
                         Los años de vida de la raza son {dog.age? dog.age : null} 
                         y tiene una altura de {dog.height? dog.height: null}. Además, su peso es
-                         {dog.weight? dog.weight :null } y sus temperamentos incluyen  {dog?.temperaments?.length>0 ? dog.temperaments.map(temp => temp.name).join(', ') : null  }.
+                         {dog.weight? dog.weight :null } y sus temperamentos incluyen  {typeof dog?.temperaments == "string"? dog?.temperaments : dog?.temperaments?.map(temp => temp.name).join(', ')  }.
                       </p>
                       <button className='detail-button'>Learn more</button>
                   </div>

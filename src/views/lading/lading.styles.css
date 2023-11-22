@@ -36,7 +36,7 @@
 
 .landing-button {
   background-color: #ffffff;
-  color: #721B65;
+  color: var(--color-morado-secundario);
   padding: 12px 24px;
   font-size: 20px;
   border: none;
@@ -47,7 +47,7 @@
 }
 
 .landing-button:hover {
-  background-color: #721B65;
+  background-color: var(--color-morado-secundario);
   border: 2px solid #ffffff;
   color: #ffffff;
 }

@@ -30,7 +30,7 @@
     padding: 20px;
     margin-right: 10px;
     border-radius: 8%;
-    border: 3px dotted  #FEA444;
+    border: 3px dotted  var(--color-amarillo-primario);
   }
 
   .container-detail-text {
@@ -55,7 +55,7 @@
   
 .detail-button {
     background-color: #ffffff;
-    color: #FEA444;
+    color: var(--color-amarillo-primario);
     padding: 12px 24px;
     font-size: 20px;
     border: none;
@@ -67,7 +67,7 @@
   
 
   .landing-button:hover {
-    background-color: #FEA444;
+    background-color: var(--color-amarillo-primario);
     border: 2px solid #ffffff;
-    color: #ffffff;
+    color: var(--color-morado-secundario);
   }
