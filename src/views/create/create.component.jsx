@@ -117,6 +117,17 @@ const handleSubmit = event => {
 
   };
 
+  setForm({
+    name: "",
+    minHeight: '',
+    maxHeight: '',
+    minweight: '',
+    maxweight: '',
+    age:"",
+    temperament: "",
+    img:""
+
+})
 
   createDogs (createDog)
 }
