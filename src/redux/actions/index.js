@@ -25,48 +25,48 @@ export const getDogs = () => {
     };
  };
 
-//  export const getTemperaments = () => {
-//     return async (dispatch) => {
-//         try {
-//             const response = await axios('/temperaments');
-//             console.log(response)
+ export const getTemperaments = () => {
+    return async (dispatch) => {
+        try {
+            const response = await axios('/temperaments');
+            console.log(response)
 
-//             return dispatch({
-//                 type: GET_TEMPERAMENTS,
-//                 payload: response.data,
-//             });
-//         } catch (error) {
-//             console.log(error.message)
-//         }
+            return dispatch({
+                type: GET_TEMPERAMENTS,
+                payload: response.data,
+            });
+        } catch (error) {
+            console.log(error.message)
+        }
 
-//     };
-//  };
+    };
+ };
 
-export const getTemperaments = () => {
-  return async (dispatch) => {
-    try {
-      const response = await fetch('/temperaments');
+// export const getTemperaments = () => {
+//   return async (dispatch) => {
+//     try {
+//       const response = await fetch('/temperaments');
 
-      if (!response.ok) {
-        throw new Error('Erro');
-      }
+//       if (!response.ok) {
+//         throw new Error('Erro');
+//       }
 
-      const data = await response.json();
+//       const data = await response.json();
 
-      if (data) {
-        console.log(data);
-        dispatch({
-          type: GET_TEMPERAMENTS,
-          payload: data,
-        });
-      } else {
-        throw new Error('Erro ao carregar temperamentos');
-      }
-    } catch (error) {
-      console.error('Erro:', error.message);
-    }
-  };
-};
+//       if (data) {
+//         console.log(data);
+//         dispatch({
+//           type: GET_TEMPERAMENTS,
+//           payload: data,
+//         });
+//       } else {
+//         throw new Error('Erro ao carregar temperamentos');
+//       }
+//     } catch (error) {
+//       console.error('Erro:', error.message);
+//     }
+//   };
+// };
 
  export const order_alfabeto = (order) => {
     return async (dispatch, getState) => {
