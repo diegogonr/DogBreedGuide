@@ -45,7 +45,7 @@ export const getDogs = () => {
 export const getTemperaments = () => {
   return async (dispatch) => {
     try {
-      const response = await fetch('http://localhost:3001/temperaments');
+      const response = await fetch('/temperaments');
 
       if (!response.ok) {
         throw new Error('Erro');
