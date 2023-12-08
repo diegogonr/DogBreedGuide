@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://dogbreedguide.onrender.com'
+axios.defaults.baseURL = 'https://dogbreedguideapi.onrender.com'
 
 // axios.defaults.baseURL = 'http://localhost:3001/'
 
